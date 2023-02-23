@@ -1,18 +1,18 @@
 @use 'variables';
 
 .head {
-    font-family: $fonts;
-    color: $primary-color;
-    font-style: $font-style;
-    font-weight: $font-weight;
+    font-family: variables.$fonts;
+    color: variables.$primary-color;
+    font-style: variables.$font-style;
+    font-weight: variables.$font-weight;
     font-size: 18px;
     line-height: 23px;
     letter-spacing: -0.346154px;
 }
 
 .content {
-    font-family: $fonts;
-    color: $primary-color;
-    font-style: $font-style;
-    font-weight: $font-weight;
+    font-family: variables.$fonts;
+    color: variables.$primary-color;
+    font-style: variables.$font-style;
+    font-weight: variables.$font-weight;
 }
