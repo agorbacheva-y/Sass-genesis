@@ -1,3 +1,15 @@
+body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+/* secondary color in text */
+.second-color {
+  color: #4A4FF2;
+}
+
+/* header */
 .head {
   font-family: "Mulish", sans-serif;
   color: #111111;
@@ -6,11 +18,95 @@
   font-size: 18px;
   line-height: 23px;
   letter-spacing: -0.346154px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1109px;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin: 60px auto;
 }
 
+/* nav bar in header */
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #111111;
+}
+
+li {
+  float: left;
+  padding-left: 30px;
+}
+
+/* content below header */
 .content {
+  max-width: 1109px;
+  width: 100%;
+  min-height: 250px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content__text {
   font-family: "Mulish", sans-serif;
   color: #111111;
   font-style: normal;
   font-weight: 700;
+  max-width: 635px;
+  width: 100%;
+  min-height: 250px;
+}
+
+.content__text h3 {
+  font-size: 22px;
+  line-height: 28px;
+  /* identical to box height */
+  letter-spacing: -0.423077px;
+}
+
+.content__text h2 {
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.content__side {
+  font-family: "Mulish", sans-serif;
+  color: #111111;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  /* identical to box height */
+  mix-blend-mode: normal;
+  opacity: 0.6;
+  max-width: 210px;
+  width: 100%;
+  height: 35px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-transform: translateY(-60px);
+          transform: translateY(-60px);
+}
+
+.content__hr {
+  width: 10%;
+  margin: 0;
+  -webkit-transform: translateY(25px);
+          transform: translateY(25px);
+  border: 1px solid #111111;
+  opacity: 0.6;
 }

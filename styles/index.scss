@@ -1,18 +1,103 @@
 @use 'variables';
 
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+/* secondary color in text */
+.second-color {
+    color: variables.$secondary-color;
+}
+
+/* header */
 .head {
     font-family: variables.$fonts;
     color: variables.$primary-color;
     font-style: variables.$font-style;
-    font-weight: variables.$font-weight;
+    font-weight: variables.$font-bold;
     font-size: 18px;
     line-height: 23px;
     letter-spacing: -0.346154px;
+
+    display: flex;
+    max-width: 1109px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 60px auto;
 }
 
+/* nav bar in header */
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: variables.$primary-color;
+}
+
+li {
+    float: left;
+    padding-left: 30px;
+}
+
+/* content below header */
 .content {
+    max-width: 1109px;
+    width: 100%;
+    min-height: 250px;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+}
+
+.content__text {
     font-family: variables.$fonts;
     color: variables.$primary-color;
     font-style: variables.$font-style;
-    font-weight: variables.$font-weight;
+    font-weight: variables.$font-bold;
+    max-width: 635px;
+    width: 100%;
+    min-height: 250px;
+}
+
+.content__text h3 {
+    font-size: 22px;
+    line-height: 28px;
+    /* identical to box height */
+    letter-spacing: -0.423077px;
+}
+
+.content__text h2 {
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.content__side {
+    font-family: variables.$fonts;
+    color: variables.$primary-color;
+    font-style: italic;
+    font-weight: variables.$font-norm;
+    font-size: 18px;
+    line-height: 23px;
+    /* identical to box height */
+    mix-blend-mode: normal;
+    opacity: 0.6;
+
+    max-width: 210px;
+    width: 100%;
+    height: 35px;
+    align-self: flex-end;
+    transform: translateY(-60px);
+}
+
+.content__hr {
+    width: 10%;
+    margin: 0;
+    transform: translateY(25px);
+    border: 1px solid variables.$primary-color;
+    opacity: 0.6;
 }
