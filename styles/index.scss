@@ -1,0 +1,16 @@
+$fonts: 'Mulish', sans-serif;
+$primary-color: #111111;
+$font-style: normal;
+$font-weight: 700;
+
+header {
+    font-family: $fonts;
+    color: $primary-color;
+    font-style: $font-style;
+    font-weight: $font-weight;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: -0.346154px;
+
+    
+}
