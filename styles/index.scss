@@ -1,6 +1,6 @@
 @use 'variables';
 
-body {
+* {
     margin: 0;
     border: 0;
     padding: 0;
@@ -61,7 +61,6 @@ li {
     font-weight: variables.$font-bold;
     max-width: 635px;
     width: 100%;
-    min-height: 250px;
 }
 
 .content__text h3 {
