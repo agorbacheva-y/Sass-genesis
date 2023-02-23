@@ -22,7 +22,7 @@
     letter-spacing: -0.346154px;
 
     display: flex;
-    max-width: 1110px;
+    max-width: variables.$container-width;
     width: 100%;
     justify-content: space-between;
     align-items: baseline;
@@ -47,9 +47,8 @@ li {
 /* CONTENT below header */
 .content__container {
     display: flex;
-    max-width: 1110px;
+    max-width: variables.$container-width;
     width: 100%;
-    min-height: 250px;
     margin: auto;
     justify-content: space-between;
 }
@@ -80,7 +79,6 @@ li {
 .content__right {
     max-width: 212px;
     width: 100%;
-    height: 35px;
     align-self: flex-end;
 }
 
@@ -105,7 +103,7 @@ li {
 /* GALLERY */
 .gallery {
     display: flex;
-    min-height: 2050px;
+    min-height: 2150px;
     align-items: flex-end;
     width: 100%;
     justify-content: center;
@@ -174,4 +172,47 @@ li {
 
 .gallery__item--12 {
     grid-area: 27/7/33/10;
+}
+
+/* services section under images */
+.services__container {
+    max-width: variables.$container-width;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.services__text {
+    font-family: variables.$fonts;
+    font-style: variables.$font-style;
+    font-weight: variables.$font-bold;
+    font-size: 28px;
+    line-height: 38px;
+    /* or 136% */
+    color: variables.$primary-color;
+
+    max-width: 635px;
+    width: 100%;
+}
+
+.services__list {
+    font-family: variables.$fonts;
+    font-style: variables.$font-style;
+    font-weight: variables.$font-norm;
+    font-size: 18px;
+    line-height: 23px;
+    /* identical to box height */
+    color: variables.$primary-color;
+
+    mix-blend-mode: normal;
+    opacity: 0.6;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 375px;
+    gap: 10px;
 }
