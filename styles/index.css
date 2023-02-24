@@ -112,6 +112,7 @@ li {
   width: 10%;
   border: 1px solid #111111;
   opacity: 0.6;
+  color: #979797;
 }
 
 /* GALLERY */
@@ -1763,3 +1764,5 @@ li {
   -ms-grid-row: 5;
   -ms-grid-column: 3;
 }
+
+/* awards */

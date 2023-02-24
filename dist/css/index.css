@@ -98,6 +98,7 @@ li {
   width: 10%;
   border: 1px solid #111111;
   opacity: 0.6;
+  color: #979797;
 }
 
 /* GALLERY */
@@ -212,4 +213,6 @@ li {
   grid-template-rows: repeat(3, 1fr);
   width: 375px;
   gap: 10px;
-}/*# sourceMappingURL=index.css.map */
+}
+
+/* awards *//*# sourceMappingURL=index.css.map */
