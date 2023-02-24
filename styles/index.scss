@@ -1,5 +1,5 @@
-@use 'variables';
-@use 'mixin';
+@import "variables";
+@import "mixins";
 
 * {
     margin: 0;
@@ -53,7 +53,7 @@ li {
 
 .content__left {
     @include font-style($weight: 700);
-    
+
     flex-direction: column;
     max-width: 635px;
     width: 100%;
@@ -78,13 +78,8 @@ li {
 }
 
 .content__motto {
-    font-family: variables.$fonts;
-    color: variables.$primary-color;
-    font-style: italic;
-    font-weight: variables.$font-norm;
-    font-size: 18px;
-    line-height: 23px;
-    /* identical to box height */
+    @include font-style($style:italic);
+    @include font-size;
     mix-blend-mode: normal;
     opacity: 0.6;
 }
