@@ -1,13 +1,16 @@
-@mixin font-style($style:normal, $weight:400) {
-    color: $primary-color;
+@use 'variables' as v;
+
+@mixin font-style($style: normal, $weight: 400) {
+    color: v.$primary-color;
     font: {
         family: 'Mulish', sans-serif;
-        font-style: $style;
+        style: $style;
         weight: $weight;
     }
 }
 
-@mixin font-size($size:18px, $line:23px) {
+@mixin font-size($size: 18px, $line: 23px, $spacing: -0.346154px) {
     font-size: $size;
     line-height: $line;
+    letter-spacing: $spacing;
 }
