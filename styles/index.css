@@ -35,7 +35,7 @@
   height: 60px;
 }
 
-/* NAV BAR in header */
+/* NAV BAR in header & footer */
 ul {
   list-style-type: none;
 }
@@ -1707,7 +1707,7 @@ li {
   font-family: "Mulish", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 26px; /*changed size from 28px to match look in figma*/
   line-height: 38px;
   /* or 136% */
   color: #111111;
@@ -1813,11 +1813,10 @@ li {
   display: -ms-grid;
   display: grid;
   border-top: 0.5px solid #979797;
-  border-bottom: 0.5px solid #979797;
   width: 1110px;
-  margin: auto;
-  -ms-grid-columns: 11.875fr 7fr 4.75fr 3fr 1fr;
-  grid-template-columns: 11.875fr 7fr 4.75fr 3fr 1fr;
+  margin: 60px auto;
+  -ms-grid-columns: 12fr 7fr 4.5fr 3fr 1fr;
+  grid-template-columns: 12fr 7fr 4.5fr 3fr 1fr;
   -ms-grid-rows: (5fr 3fr 10fr)[2];
   grid-template-rows: repeat(2, 5fr 3fr 10fr);
 }
@@ -1943,17 +1942,39 @@ li {
   font-size: 18px;
   line-height: 23px;
   letter-spacing: -0.346154px;
+  border-top: 0.5px solid #979797;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   max-width: 1110px;
   width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  min-height: 145px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
   margin: 50px auto;
-  height: 85px;
+}
+
+.footer__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 380px;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 95px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
