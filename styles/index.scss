@@ -219,4 +219,92 @@ li {
     gap: 10px;
 }
 
-/* awards */
+/* AWARDS styling*/
+.awards__container h4 {
+    font-family: variables.$fonts;
+    font-style: variables.$font-style;
+    font-weight: variables.$font-bold;
+    font-size: 22px;
+    line-height: 28px;
+    /* identical to box height */
+    color: variables.$primary-color;
+}
+
+.awards__container h5 {
+    font-family: variables.$fonts;
+    font-style: variables.$font-style;
+    font-weight: variables.$font-bold;
+    font-size: 18px;
+    line-height: 23px;
+    /* identical to box height */
+    color: variables.$primary-color;
+}
+
+.awards__container h6 {
+    font-family: variables.$fonts;
+    font-style: variables.$font-style;
+    font-weight: variables.$font-norm;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    color: variables.$primary-color;
+}
+
+.awards__container p {
+    font-family: variables.$fonts;
+    font-style: variables.$font-style;
+    font-weight: variables.$font-norm;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+    color: variables.$primary-color;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+}
+
+/* AWARDS grid */
+.awards__container {
+    display: grid;
+    border-top: 0.5px solid #979797;
+    border-bottom: 0.5px solid #979797;
+    width: variables.$container-width;
+    margin: auto;
+    grid-template-columns: 11.875fr 7fr 4.75fr 3fr 1fr;
+    grid-template-rows: repeat(2, 5fr 3fr 10fr);
+}
+
+.awards__item--1 {
+    grid-area: 2/1/3/2;
+}
+
+.awards__item--2 {
+    grid-area: 2/2/3/3;
+}
+
+.awards__item--3 {
+    grid-area: 2/3/3/4;
+}
+
+.awards__item--4 {
+    grid-area: 2/5/3/6;
+}
+
+.awards__item--5 {
+    grid-area: 3/3/4/4;
+}
+
+.awards__item--6 {
+    grid-area: 5/2/6/3;
+}
+
+.awards__item--7 {
+    grid-area: 5/3/6/4;
+}
+
+.awards__item--8 {
+    grid-area: 5/5/6/6;
+}
+
+.awards__item--9 {
+    grid-area: 6/3/7/4;
+}
