@@ -25,7 +25,7 @@
     max-width: variables.$container-width;
     width: 100%;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     margin: 60px auto;
     height: 60px;
 }
@@ -307,4 +307,23 @@ li {
 
 .awards__item--9 {
     grid-area: 6/3/7/4;
+}
+
+/* FOOTER */
+.footer {
+    font-family: variables.$fonts;
+    color: variables.$primary-color;
+    font-style: variables.$font-style;
+    font-weight: variables.$font-bold;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: -0.346154px;
+
+    display: flex;
+    max-width: variables.$container-width;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 50px auto;
+    height: 85px;
 }

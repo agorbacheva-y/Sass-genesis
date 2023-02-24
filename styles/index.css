@@ -28,9 +28,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 60px auto;
   height: 60px;
 }
@@ -1932,4 +1932,28 @@ li {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-area: 6/3/7/4;
+}
+
+/* FOOTER */
+.footer {
+  font-family: "Mulish", sans-serif;
+  color: #111111;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -0.346154px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1110px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 50px auto;
+  height: 85px;
 }
