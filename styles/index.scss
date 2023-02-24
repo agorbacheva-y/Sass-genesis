@@ -1,4 +1,5 @@
 @use 'variables';
+@use 'mixin';
 
 * {
     margin: 0;
@@ -13,12 +14,8 @@
 
 /* HEADER */
 .head {
-    font-family: variables.$fonts;
-    color: variables.$primary-color;
-    font-style: variables.$font-style;
-    font-weight: variables.$font-bold;
-    font-size: 18px;
-    line-height: 23px;
+    @include font-style;
+    @include font-size; 
     letter-spacing: -0.346154px;
 
     display: flex;
@@ -55,26 +52,23 @@ li {
 }
 
 .content__left {
+    @include font-style($weight: 700);
+    
     flex-direction: column;
     max-width: 635px;
     width: 100%;
-    font-family: variables.$fonts;
-    color: variables.$primary-color;
-    font-style: variables.$font-style;
-    font-weight: variables.$font-bold;
 }
 
 .content__title {
-    font-size: 22px;
-    line-height: 28px;
-    /* identical to box height */
+    @include font-size($size:22px, $line: 28px);
     letter-spacing: -0.423077px;
     margin-bottom: 32px;
 }
 
-.content__text h2 {
-    font-size: 40px;
-    line-height: 60px;
+.content__text {
+    h2 {
+    @include font-size($size:40px, $line:60px)
+    }
 }
 
 .content__right {
@@ -219,7 +213,8 @@ li {
 }
 
 /* AWARDS styling*/
-.awards__container h4 {
+.awards__container {
+    h4 {
     font-family: variables.$fonts;
     font-style: variables.$font-style;
     font-weight: variables.$font-bold;
@@ -227,9 +222,9 @@ li {
     line-height: 28px;
     /* identical to box height */
     color: variables.$primary-color;
-}
+    }
 
-.awards__container h5 {
+    h5 {
     font-family: variables.$fonts;
     font-style: variables.$font-style;
     font-weight: variables.$font-bold;
@@ -237,9 +232,9 @@ li {
     line-height: 23px;
     /* identical to box height */
     color: variables.$primary-color;
-}
+    }
 
-.awards__container h6 {
+    h6 {
     font-family: variables.$fonts;
     font-style: variables.$font-style;
     font-weight: variables.$font-norm;
@@ -247,9 +242,9 @@ li {
     line-height: 20px;
     /* identical to box height */
     color: variables.$primary-color;
-}
+    }
 
-.awards__container p {
+    p {
     font-family: variables.$fonts;
     font-style: variables.$font-style;
     font-weight: variables.$font-norm;
@@ -259,6 +254,7 @@ li {
     color: variables.$primary-color;
     mix-blend-mode: normal;
     opacity: 0.6;
+    }
 }
 
 /* AWARDS grid */

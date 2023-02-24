@@ -1,0 +1,13 @@
+@mixin font-style($style:normal, $weight:400) {
+    color: $primary-color;
+    font: {
+        family: 'Mulish', sans-serif;
+        font-style: $style;
+        weight: $weight;
+    }
+}
+
+@mixin font-size($size:18px, $line:23px) {
+    font-size: $size;
+    line-height: $line;
+}
