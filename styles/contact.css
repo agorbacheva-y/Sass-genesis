@@ -6,11 +6,6 @@
   padding: 0;
 }
 
-/* secondary color in text */
-.second-color {
-  color: #4A4FF2;
-}
-
 /* HEADER */
 .head {
   color: #111111;
@@ -48,6 +43,60 @@ a {
 li {
   float: left;
   padding-left: 30px;
+}
+
+/* CONTENT */
+.content {
+  max-width: 1110px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content__text {
+  max-width: 445px;
+  width: 100%;
+}
+.content__text h1 {
+  color: #111111;
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 55px;
+}
+.content__text p {
+  color: #111111;
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+/* form */
+form {
+  max-width: 475px;
+  width: 100%;
+  min-height: 291px;
+  border: 1px solid red;
+}
+
+/* MAP */
+.map {
+  max-width: 1110px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 110px auto;
 }
 
 /* FOOTER */

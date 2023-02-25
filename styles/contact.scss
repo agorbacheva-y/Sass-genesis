@@ -7,11 +7,6 @@
     padding: 0;
 }
 
-/* secondary color in text */
-.second-color {
-    color: v.$secondary-color;
-}
-
 /* HEADER */
 .head {
     @include m.font-style($weight: 700);
@@ -39,6 +34,48 @@ a {
 li {
     float: left;
     padding-left: 30px;
+}
+
+/* CONTENT */
+.content {
+    max-width: v.$container-width;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.content__text {
+    max-width: 445px;
+    width: 100%;
+
+    h1 {
+        @include m.font-style($weight:700);
+        @include m.font-size($size:40px, $line:55px);
+    }
+
+    p {
+        @include m.font-style;
+        @include m.font-size($size:16px, $line:26px);
+        mix-blend-mode: normal;
+        opacity: 0.8;
+    }
+}
+
+/* form */
+form {
+    max-width: 475px;
+    width: 100%;
+    min-height: 291px;
+    border: 1px solid red;
+}
+
+/* MAP */
+.map {
+    max-width: v.$container-width;
+    width: 100%;
+    display: flex;
+    margin: 110px auto;
 }
 
 /* FOOTER */
