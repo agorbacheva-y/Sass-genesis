@@ -111,11 +111,19 @@ li {
     opacity: 0.8;
 }
 
+/* SMALLER IMAGES */
+.small-images {
+    max-width: v.$container-width;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    margin: auto;
+}
+
 /* FOOTER */
 .footer {
     @include m.font-style($weight:700);
     @include m.font-size;
-    border-top: v.$border-style;
     display: flex;
     max-width: v.$container-width;
     width: 100%;
