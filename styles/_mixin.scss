@@ -9,8 +9,7 @@
     }
 }
 
-@mixin font-size($size: 18px, $line: 23px, $spacing: -0.346154px) {
+@mixin font-size($size: 18px, $line: 23px) {
     font-size: $size;
     line-height: $line;
-    letter-spacing: $spacing;
 }

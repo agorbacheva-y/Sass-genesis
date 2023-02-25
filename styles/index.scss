@@ -16,6 +16,7 @@
 .head {
     @include m.font-style($weight: 700);
     @include m.font-size;
+    letter-spacing: $spacing;
     display: flex;
     max-width: v.$container-width;
     width: 100%;
@@ -57,7 +58,8 @@ li {
 }
 
 .content__title {
-    @include m.font-size($size: 22px, $line: 28px, $spacing:-0.423077px);
+    @include m.font-size($size: 22px, $line: 28px);
+    letter-spacing: -0.423077px;
     margin-bottom: 32px;
 }
 
@@ -77,14 +79,14 @@ li {
     @include m.font-style($style: italic);
     @include m.font-size;
     mix-blend-mode: normal;
-    opacity: 0.6;
+    opacity: v.$opacity;
 }
 
 .content__hr {
     width: 10%;
     border: 1px solid v.$primary-color;
-    opacity: 0.6;
-    color: #979797;
+    opacity: v.$opacity;
+    color: v.$border-color;
 }
 
 /* GALLERY */
@@ -185,7 +187,7 @@ li {
     @include m.font-size;
     /* identical to box height */
     mix-blend-mode: normal;
-    opacity: 0.6;
+    opacity: v.$opacity;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -218,15 +220,16 @@ li {
         @include m.font-size($size:16px, $line:26px);
         /* or 162% */
         mix-blend-mode: normal;
-        opacity: 0.6;
+        opacity: v.$opacity;
     }
 }
 
 /* AWARDS grid */
 .awards__container {
     display: grid;
-    border-top: 0.5px solid #979797;
-    width: v.$container-width;
+    border-top: 0.5px solid v.$border-color;
+    max-width: v.$container-width;
+    width: 100%;
     margin: 60px auto;
     grid-template-columns: 12fr 7fr 4.5fr 3fr 1fr;
     grid-template-rows: repeat(2, 5fr 3fr 10fr);
@@ -272,7 +275,8 @@ li {
 .footer {
     @include m.font-style($weight:700);
     @include m.font-size;
-    border-top: 0.5px solid #979797;
+    letter-spacing: $spacing;
+    border-top: 0.5px solid v.$border-color;
     display: flex;
     max-width: v.$container-width;
     width: 100%;

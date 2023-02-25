@@ -14,7 +14,6 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 23px;
-  letter-spacing: -0.346154px;
   display: flex;
   max-width: 1110px;
   width: 100%;
@@ -39,6 +38,24 @@ li {
   padding-left: 30px;
 }
 
+/* ARTICLE */
+.article__container h1 {
+  color: #111111;
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 55px;
+}
+.article__container p {
+  color: #111111;
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
 /* FOOTER */
 .footer {
   color: #111111;
@@ -47,7 +64,6 @@ li {
   font-weight: 700;
   font-size: 18px;
   line-height: 23px;
-  letter-spacing: -0.346154px;
   border-top: 0.5px solid #979797;
   display: flex;
   max-width: 1110px;
