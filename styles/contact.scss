@@ -1,0 +1,70 @@
+@use 'variables' as v;
+@use 'mixin' as m;
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+/* secondary color in text */
+.second-color {
+    color: v.$secondary-color;
+}
+
+/* HEADER */
+.head {
+    @include m.font-style($weight: 700);
+    @include m.font-size;
+    letter-spacing: v.$spacing;
+    display: flex;
+    max-width: v.$container-width;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px auto;
+    height: 60px;
+}
+
+/* NAV BAR in header & footer */
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: v.$primary-color;
+}
+
+li {
+    float: left;
+    padding-left: 30px;
+}
+
+/* FOOTER */
+.footer {
+    @include m.font-style($weight:700);
+    @include m.font-size;
+    letter-spacing: v.$spacing;
+    display: flex;
+    max-width: v.$container-width;
+    width: 100%;
+    min-height: 145px;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 50px auto;
+    
+}
+
+.footer__links {
+    display: flex;
+    max-width: 380px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer__icons {
+    display: flex;
+    width: 95px;
+    justify-content: space-between;
+}
