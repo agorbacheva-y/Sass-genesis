@@ -70,6 +70,7 @@ li {
     min-height: 343px;
     grid-template-columns: 137px 165px;
     grid-template-rows: repeat(6, 1fr);
+    margin-top: 45px;
 
     @include m.font-style($weight:700);
     @include m.font-size;
@@ -78,16 +79,24 @@ li {
     h4 {
         mix-blend-mode: normal;
         opacity: 0.5;
-        padding-bottom: 15px;
-        padding-top: 15px;
+        padding-bottom: 18px;
+        padding-top: 18px;
         border-bottom: 0.5px solid rgba(v.$border-color, 0.5);
     }
 
     p {
-        padding-bottom: 15px;
-        padding-top: 15px;
+        padding-bottom: 18px;
+        padding-top: 18px;
         border-bottom: 0.5px solid rgba(v.$border-color, 0.5);
     }
+}
+
+/* MAIN IMAGE */
+.main-image {
+    max-width: v.$container-width;
+    width: 100%;
+    margin: 60px auto;
+
 }
 
 /* FOOTER */

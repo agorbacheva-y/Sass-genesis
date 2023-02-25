@@ -91,6 +91,7 @@ li {
   grid-template-columns: 137px 165px;
   -ms-grid-rows: (1fr)[6];
   grid-template-rows: repeat(6, 1fr);
+  margin-top: 45px;
   color: #111111;
   font-family: "Mulish", sans-serif;
   font-style: normal;
@@ -161,14 +162,21 @@ li {
 .article__grid h4 {
   mix-blend-mode: normal;
   opacity: 0.5;
-  padding-bottom: 15px;
-  padding-top: 15px;
+  padding-bottom: 18px;
+  padding-top: 18px;
   border-bottom: 0.5px solid rgba(151, 151, 151, 0.5);
 }
 .article__grid p {
-  padding-bottom: 15px;
-  padding-top: 15px;
+  padding-bottom: 18px;
+  padding-top: 18px;
   border-bottom: 0.5px solid rgba(151, 151, 151, 0.5);
+}
+
+/* MAIN IMAGE */
+.main-image {
+  max-width: 1110px;
+  width: 100%;
+  margin: 60px auto;
 }
 
 /* FOOTER */
