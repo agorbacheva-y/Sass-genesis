@@ -9,7 +9,7 @@
 
 /* HEADER */
 .head {
-    @include m.font-style($weight: 700);
+    @include m.font-style($weight:700);
     @include m.font-size;
     display: flex;
     max-width: v.$container-width;
@@ -95,8 +95,20 @@ li {
 .main-image {
     max-width: v.$container-width;
     width: 100%;
-    margin: 60px auto;
+    margin: 60px auto 0px auto;
 
+}
+
+/* CAPTION */
+.caption {
+    max-width: v.$container-width;
+    width: 100%;
+    margin: 45px auto;
+
+    @include m.font-style;
+    @include m.font-size($size:16px, $line:26px);
+    mix-blend-mode: normal;
+    opacity: 0.8;
 }
 
 /* FOOTER */
