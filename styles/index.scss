@@ -227,7 +227,7 @@ li {
 /* AWARDS grid */
 .awards__container {
     display: grid;
-    border-top: 0.5px solid v.$border-color;
+    border-top: v.$border-style;
     max-width: v.$container-width;
     width: 100%;
     margin: 60px auto;
@@ -276,7 +276,7 @@ li {
     @include m.font-style($weight:700);
     @include m.font-size;
     letter-spacing: $spacing;
-    border-top: 0.5px solid v.$border-color;
+    border-top: v.$border-style;
     display: flex;
     max-width: v.$container-width;
     width: 100%;
