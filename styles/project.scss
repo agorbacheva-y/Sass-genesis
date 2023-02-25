@@ -34,3 +34,32 @@ li {
     float: left;
     padding-left: 30px;
 }
+
+
+/* FOOTER */
+.footer {
+    @include m.font-style($weight:700);
+    @include m.font-size;
+    border-top: 0.5px solid #979797;
+    display: flex;
+    max-width: v.$container-width;
+    width: 100%;
+    min-height: 145px;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 50px auto;
+    
+}
+
+.footer__links {
+    display: flex;
+    max-width: 380px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer__icons {
+    display: flex;
+    width: 95px;
+    justify-content: space-between;
+}
