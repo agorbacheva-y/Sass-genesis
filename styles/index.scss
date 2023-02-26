@@ -56,7 +56,7 @@ li {
 
 .content__text {
     h2 {
-        @include m.font-size($size: 40px, $line: 60px)
+        @include m.font-size($size: 40px, $line: 60px);
     }
 }
 
@@ -278,9 +278,9 @@ li {
 }
 
 .footer__links {
-    @include m.footer__links
+    @include m.footer__links;
 }
 
 .footer__icons {
-    @include m.footer__icons
+    @include m.footer__icons;
 }

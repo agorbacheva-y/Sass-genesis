@@ -120,9 +120,9 @@ li {
 }
 
 .footer__links {
-    @include m.footer__links
+    @include m.footer__links;
 }
 
 .footer__icons {
-    @include m.footer__icons
+    @include m.footer__icons;
 }

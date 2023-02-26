@@ -76,7 +76,7 @@ li {
 form {
   max-width: 475px;
   width: 100%;
-  min-height: 236px;
+  min-height: 291px;
   display: inline-flex;
   flex-direction: column;
   color: #111111;
@@ -152,10 +152,10 @@ form {
   display: flex;
   max-width: 1110px;
   width: 100%;
-  min-height: 145px;
+  height: 23px;
   justify-content: space-between;
   align-items: flex-end;
-  margin: 50px auto;
+  margin: 120px auto 47px auto;
 }
 
 .footer__links {
