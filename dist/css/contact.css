@@ -34,6 +34,13 @@ a {
   text-decoration: none;
   color: #111111;
 }
+a:hover {
+  color: #4A4FF2;
+}
+a:active {
+  background-color: #4A4FF2;
+  color: white;
+}
 
 li {
   float: left;

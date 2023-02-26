@@ -27,6 +27,20 @@
     height: 23px;
 }
 
+@mixin anchor {
+    text-decoration: none;
+    color: v.$primary-color;
+
+    &:hover {
+        color: v.$secondary-color;
+    }
+
+    &:active {
+        background-color: v.$secondary-color;
+        color: white;
+    }
+}
+
 @mixin footer {
     @include font-style($weight:700);
     @include font-size;
