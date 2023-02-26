@@ -32,7 +32,7 @@ li {
     display: flex;
     max-width: v.$container-width;
     width: 100%;
-    min-height: 380px;
+    min-height: 350px;
     margin: auto;
     justify-content: space-between;
 }
@@ -62,7 +62,7 @@ li {
     min-height: 343px;
     grid-template-columns: 137px 165px;
     grid-template-rows: repeat(6, 1fr);
-    margin-top: 45px;
+    margin-top: 40px;
 
     @include m.font-style($weight:700);
     @include m.font-size;

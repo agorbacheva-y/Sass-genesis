@@ -10,16 +10,7 @@
 
 /* HEADER */
 .head {
-    @include m.font-style($weight: 700);
-    @include m.font-size;
-    letter-spacing: v.$spacing;
-    display: flex;
-    max-width: v.$container-width;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    margin: 60px auto;
-    height: 60px;
+    @include m.header;
 }
 
 /* NAV BAR in header & footer */
