@@ -92,6 +92,7 @@ form {
   height: 37px;
   margin-top: 46px;
   display: inline-flex;
+  transition: border 0.3s ease;
 }
 .form__field label {
   color: #111111;
@@ -108,8 +109,11 @@ form {
   padding-left: 10px;
   transform: translate(5px, -8px);
 }
+.form__field input:hover {
+  border: 1px solid rgb(211, 210, 210);
+}
 .form__field input:focus {
-  border: 2px solid #4A4FF2;
+  border: 1px solid black;
 }
 
 .form__button {
@@ -118,6 +122,14 @@ form {
   color: white;
   background-color: #4A4FF2;
   margin-top: 38px;
+  transition: all 0.3s ease;
+}
+.form__button:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3));
+  cursor: pointer;
+}
+.form__button:active {
+  transform: scale(1.05);
 }
 
 /* MAP */

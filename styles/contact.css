@@ -109,6 +109,8 @@ form {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-transition: border 0.3s ease;
+  transition: border 0.3s ease;
 }
 .form__field label {
   color: #111111;
@@ -126,8 +128,11 @@ form {
   -webkit-transform: translate(5px, -8px);
           transform: translate(5px, -8px);
 }
+.form__field input:hover {
+  border: 1px solid rgb(211, 210, 210);
+}
 .form__field input:focus {
-  border: 2px solid #4A4FF2;
+  border: 1px solid black;
 }
 
 .form__button {
@@ -136,6 +141,17 @@ form {
   color: white;
   background-color: #4A4FF2;
   margin-top: 38px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.form__button:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3));
+  cursor: pointer;
+}
+.form__button:active {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 /* MAP */

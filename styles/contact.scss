@@ -80,6 +80,7 @@ form {
     height: 37px;
     margin-top: 46px;
     display: inline-flex;
+    transition: border 0.3s ease;
 
     label {
         @include m.font-style($weight:700);
@@ -93,8 +94,12 @@ form {
         padding-left: 10px;
         transform: translate(5px, -8px);
 
+        &:hover {
+            border: 1px solid rgb(211, 210, 210);
+        }
+
         &:focus {
-            border: 2px solid v.$secondary-color;
+            border: 1px solid black;
         }
     }
 }
@@ -105,6 +110,16 @@ form {
     color: white;
     background-color: v.$secondary-color;
     margin-top: 38px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-image: linear-gradient(rgba(0,0,0,0.3)) ;
+        cursor: pointer;
+    }
+
+    &:active {
+        transform: scale(1.05);
+    }
 }
 
 /* MAP */
