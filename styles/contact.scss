@@ -5,6 +5,7 @@
     margin: 0;
     border: 0;
     padding: 0;
+    outline: 0;
 }
 
 /* HEADER */
@@ -62,12 +63,48 @@ li {
     }
 }
 
-/* form */
+/* FORM */
 form {
     max-width: 475px;
     width: 100%;
-    min-height: 291px;
-    border: 1px solid red;
+    min-height: 236px;
+    display: inline-flex;
+    flex-direction: column;
+
+    @include m.font-style($weight:700);
+    @include m.font-size($size:16px, $line:20px);
+}
+
+.form__field {
+    border-bottom: 1px solid rgba(v.$border-color, 0.5);
+    height: 37px;
+    margin-top: 46px;
+    display: inline-flex;
+
+    label {
+        @include m.font-style($weight:700);
+        @include m.font-size($size:16px, $line:20px);
+        mix-blend-mode: normal;
+        opacity: v.$opacity;
+    }
+
+    input {
+        width: 100%;
+        padding-left: 10px;
+        transform: translate(5px, -8px);
+
+        &:focus {
+            border: 2px solid v.$secondary-color;
+        }
+    }
+}
+
+.form__button {
+    width: 125px;
+    height: 50px;
+    color: white;
+    background-color: v.$secondary-color;
+    margin-top: 38px;
 }
 
 /* MAP */
@@ -75,7 +112,7 @@ form {
     max-width: v.$container-width;
     width: 100%;
     display: flex;
-    margin: 110px auto;
+    margin: 120px auto 0px auto;
 }
 
 /* FOOTER */
