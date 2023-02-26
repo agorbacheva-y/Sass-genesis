@@ -68,18 +68,20 @@ li {
     @include m.font-size;
     
 
-    h4 {
-        mix-blend-mode: v.$mix-blend-mode;
-        opacity: 0.5;
+    %article-grid {
         padding-bottom: 18px;
         padding-top: 18px;
         border-bottom: 0.5px solid rgba(v.$border-color, 0.5);
     }
 
+    h4 {
+        mix-blend-mode: v.$mix-blend-mode;
+        opacity: 0.5;
+        @extend %article-grid;
+    }
+
     p {
-        padding-bottom: 18px;
-        padding-top: 18px;
-        border-bottom: 0.5px solid rgba(v.$border-color, 0.5);
+        @extend %article-grid;
     }
 }
 
@@ -114,27 +116,13 @@ li {
 
 /* FOOTER */
 .footer {
-    @include m.font-style($weight:700);
-    @include m.font-size;
-    display: flex;
-    max-width: v.$container-width;
-    width: 100%;
-    min-height: 145px;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin: 50px auto;
-    
+    @include m.footer;
 }
 
 .footer__links {
-    display: flex;
-    max-width: 380px;
-    width: 100%;
-    justify-content: space-between;
+    @include m.footer__links
 }
 
 .footer__icons {
-    display: flex;
-    width: 95px;
-    justify-content: space-between;
+    @include m.footer__icons
 }

@@ -87,19 +87,15 @@ li {
   font-size: 18px;
   line-height: 23px;
 }
+.article__grid p, .article__grid h4 {
+  padding-bottom: 18px;
+  padding-top: 18px;
+  border-bottom: 0.5px solid rgba(151, 151, 151, 0.5);
+}
 .article__grid h4 {
   mix-blend-mode: normal;
   opacity: 0.5;
-  padding-bottom: 18px;
-  padding-top: 18px;
-  border-bottom: 0.5px solid rgba(151, 151, 151, 0.5);
 }
-.article__grid p {
-  padding-bottom: 18px;
-  padding-top: 18px;
-  border-bottom: 0.5px solid rgba(151, 151, 151, 0.5);
-}
-
 /* MAIN IMAGE */
 .main-image {
   max-width: 1110px;
@@ -139,13 +135,14 @@ li {
   font-weight: 700;
   font-size: 18px;
   line-height: 23px;
+  letter-spacing: -0.346154px;
   display: flex;
   max-width: 1110px;
   width: 100%;
-  min-height: 145px;
+  height: 23px;
   justify-content: space-between;
   align-items: flex-end;
-  margin: 50px auto;
+  margin: 120px auto 47px auto;
 }
 
 .footer__links {
