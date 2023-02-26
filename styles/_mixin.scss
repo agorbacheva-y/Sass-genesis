@@ -13,3 +13,42 @@
     font-size: $size;
     line-height: $line;
 }
+
+@mixin header {
+    @include font-style($weight: 700);
+    @include font-size;
+    letter-spacing: v.$spacing;
+    display: flex;
+    max-width: v.$container-width;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px auto 100px auto;
+    height: 23px;
+}
+
+@mixin footer {
+    @include font-style($weight:700);
+    @include font-size;
+    letter-spacing: v.$spacing;
+    display: flex;
+    max-width: v.$container-width;
+    width: 100%;
+    height: 23px;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 120px auto 47px auto;
+    }
+
+@mixin footer__links {
+    display: flex;
+    max-width: 380px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+@mixin footer__icons {
+    display: flex;
+    width: 95px;
+    justify-content: space-between;
+}

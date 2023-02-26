@@ -31,8 +31,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 60px auto;
-  height: 60px;
+  margin: 60px auto 100px auto;
+  height: 23px;
 }
 
 /* NAV BAR in header & footer */
@@ -86,7 +86,6 @@ li {
 .content__text h2 {
   font-size: 40px;
   line-height: 60px;
-  letter-spacing: -0.346154px;
 }
 
 .content__right {
@@ -103,7 +102,6 @@ li {
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
-  letter-spacing: -0.346154px;
   mix-blend-mode: normal;
   opacity: 0.6;
 }
@@ -1710,7 +1708,6 @@ li {
   font-weight: 700;
   font-size: 26px;
   line-height: 38px;
-  letter-spacing: -0.346154px;
   /*changed font-size from 28px to match spacing in figma*/
   max-width: 635px;
   width: 100%;
@@ -1723,7 +1720,6 @@ li {
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
-  letter-spacing: -0.346154px;
   /* identical to box height */
   mix-blend-mode: normal;
   opacity: 0.6;
@@ -1775,7 +1771,6 @@ li {
   font-weight: 700;
   font-size: 22px;
   line-height: 28px;
-  letter-spacing: -0.346154px;
   /* identical to box height */
 }
 .awards__container h5 {
@@ -1785,7 +1780,6 @@ li {
   font-weight: 700;
   font-size: 18px;
   line-height: 23px;
-  letter-spacing: -0.346154px;
   /* identical to box height */
 }
 .awards__container h6 {
@@ -1795,7 +1789,6 @@ li {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  letter-spacing: -0.346154px;
   /* identical to box height */
 }
 .awards__container p {
@@ -1805,63 +1798,68 @@ li {
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
-  letter-spacing: -0.346154px;
   /* or 162% */
   mix-blend-mode: normal;
   opacity: 0.6;
 }
 
 /* AWARDS grid */
-.awards__container {
+.bottom, .top {
   display: -ms-grid;
   display: grid;
   border-top: 0.5px solid #979797;
-  width: 1110px;
-  margin: 60px auto;
+  max-width: 1110px;
+  width: 100%;
+  margin: 50px auto 60px auto;
   -ms-grid-columns: 12fr 7fr 4.5fr 3fr 1fr;
   grid-template-columns: 12fr 7fr 4.5fr 3fr 1fr;
   -ms-grid-rows: (5fr 3fr 10fr)[2];
   grid-template-rows: repeat(2, 5fr 3fr 10fr);
 }
-.awards__container > *:nth-child(1) {
+.bottom > *:nth-child(1), .top > *:nth-child(1) {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
 }
-.awards__container > *:nth-child(2) {
+.bottom > *:nth-child(2), .top > *:nth-child(2) {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
 }
-.awards__container > *:nth-child(3) {
+.bottom > *:nth-child(3), .top > *:nth-child(3) {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
 }
-.awards__container > *:nth-child(4) {
+.bottom > *:nth-child(4), .top > *:nth-child(4) {
   -ms-grid-row: 1;
   -ms-grid-column: 4;
 }
-.awards__container > *:nth-child(5) {
+.bottom > *:nth-child(5), .top > *:nth-child(5) {
   -ms-grid-row: 1;
   -ms-grid-column: 5;
 }
-.awards__container > *:nth-child(6) {
+.bottom > *:nth-child(6), .top > *:nth-child(6) {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
 }
-.awards__container > *:nth-child(7) {
+.bottom > *:nth-child(7), .top > *:nth-child(7) {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
 }
-.awards__container > *:nth-child(8) {
+.bottom > *:nth-child(8), .top > *:nth-child(8) {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
 }
-.awards__container > *:nth-child(9) {
+.bottom > *:nth-child(9), .top > *:nth-child(9) {
   -ms-grid-row: 2;
   -ms-grid-column: 4;
 }
-.awards__container > *:nth-child(10) {
+.bottom > *:nth-child(10), .top > *:nth-child(10) {
   -ms-grid-row: 2;
   -ms-grid-column: 5;
+}
+
+.bottom {
+  border-bottom: 0.5px solid #979797;
+  padding-bottom: 60px;
 }
 
 .awards__item--1 {
@@ -1945,20 +1943,19 @@ li {
   font-size: 18px;
   line-height: 23px;
   letter-spacing: -0.346154px;
-  border-top: 0.5px solid #979797;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   max-width: 1110px;
   width: 100%;
-  min-height: 145px;
+  height: 23px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  margin: 50px auto;
+  margin: 120px auto 47px auto;
 }
 
 .footer__links {

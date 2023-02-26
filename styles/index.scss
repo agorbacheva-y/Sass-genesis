@@ -14,16 +14,7 @@
 
 /* HEADER */
 .head {
-    @include m.font-style($weight: 700);
-    @include m.font-size;
-    letter-spacing: $spacing;
-    display: flex;
-    max-width: v.$container-width;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    margin: 60px auto;
-    height: 60px;
+    @include m.header;
 }
 
 /* NAV BAR in header & footer */
@@ -78,7 +69,7 @@ li {
 .content__motto {
     @include m.font-style($style: italic);
     @include m.font-size;
-    mix-blend-mode: normal;
+    mix-blend-mode: v.$mix-blend-mode;
     opacity: v.$opacity;
 }
 
@@ -186,7 +177,7 @@ li {
     @include m.font-style;
     @include m.font-size;
     /* identical to box height */
-    mix-blend-mode: normal;
+    mix-blend-mode: v.$mix-blend-mode;
     opacity: v.$opacity;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -219,20 +210,30 @@ li {
         @include m.font-style;
         @include m.font-size($size:16px, $line:26px);
         /* or 162% */
-        mix-blend-mode: normal;
+        mix-blend-mode: v.$mix-blend-mode;
         opacity: v.$opacity;
     }
 }
 
 /* AWARDS grid */
-.awards__container {
+%awards__container {
     display: grid;
     border-top: v.$border-style;
     max-width: v.$container-width;
     width: 100%;
-    margin: 60px auto;
+    margin: 50px auto 60px auto;
     grid-template-columns: 12fr 7fr 4.5fr 3fr 1fr;
     grid-template-rows: repeat(2, 5fr 3fr 10fr);
+}
+
+.top {
+    @extend %awards__container;
+}
+
+.bottom {
+    @extend %awards__container;
+    border-bottom: v.$border-style;
+    padding-bottom: 60px;
 }
 
 .awards__item--1 {
@@ -273,29 +274,13 @@ li {
 
 /* FOOTER */
 .footer {
-    @include m.font-style($weight:700);
-    @include m.font-size;
-    letter-spacing: $spacing;
-    border-top: v.$border-style;
-    display: flex;
-    max-width: v.$container-width;
-    width: 100%;
-    min-height: 145px;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin: 50px auto;
-    
+    @include m.footer;
 }
 
 .footer__links {
-    display: flex;
-    max-width: 380px;
-    width: 100%;
-    justify-content: space-between;
+    @include m.footer__links
 }
 
 .footer__icons {
-    display: flex;
-    width: 95px;
-    justify-content: space-between;
+    @include m.footer__icons
 }
